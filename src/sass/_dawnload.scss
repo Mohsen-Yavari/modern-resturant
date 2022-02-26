@@ -1,0 +1,78 @@
+.app__container{
+    background:var(--orange);
+    border-radius: 10px;
+    padding: 10px;
+    .app__img{
+      margin-bottom:-100px;
+    }
+    .app__content{
+      padding-top:50px;
+      h5{
+        color: var(--white);
+        margin-top:20px;
+      }
+      h2{
+        color:var(--black);
+        font-weight: 600;
+      }
+      p{
+        color:rgb(187, 178, 178);
+      }
+    }
+    .btn__apple{
+      background-color:var(--black);
+      border:none !important;
+      outline:none !important;
+      color:var(--white);
+      padding:.5rem 1rem;
+      border-radius:5px
+     
+    }
+  
+    .btn__google{
+      background-color:var(--black);
+      border:none !important;
+      outline:none !important;
+      color:var(--white);
+      padding:.5rem 1rem;
+      border-radius:5px
+    }
+  }
+  
+  @media only screen and (max-width:991){
+    .app__img img{
+ 
+        width:100%;
+    }
+    .app__content{
+      h5{
+        font-size:1rem;
+      }
+      h2{
+        font-size:1.5rem;
+      }
+      p{
+        font-size:.7rem;
+        line-height:25px;
+      }
+      
+    }
+    .btn__apple,
+    .btn__google{
+      padding:5px 20px;
+      font-size: .8rem;
+    }
+    .app__content{
+      padding-bottom: 50px;
+    }
+  }
+
+  @media only screen and (max-width:768){
+    .app__content{
+      margin-bottom:30px;
+
+    }
+    .app__img{
+      margin-bottom:0;
+    }
+  }

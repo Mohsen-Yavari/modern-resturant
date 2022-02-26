@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Moo+Lah+Lah&family=Open+Sans:wght@300&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root{
+  --white:#faedcd;
+  --black:#03071e;
+  --orange:#fb8500;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+body{
+  
+  font-family: 'Lato', sans-serif;
+  font-family: 'Moo Lah Lah', cursive;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color:var(--black);
+}
+section,footer{
+  padding:70px 0px;
+}
+h1,h2{
+  font-size: 2rem;
+  font-weight: 500;
+  color:var(--orange);
+}
+p{
+  font-size: 1rem;
+  color:var(--white);
+  line-height: 30px;
+
+}
+a{
+  text-decoration: none;
+  color:unset;
+}
+ i{
+  color:var(--white);
+ 
+  
+}
+
+
+//header
+.header{
+  width:100%;
+  height:80px;
+  line-height:80px;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: 9;
+  background-color:#0a071a;
+ 
+  .nanigation{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav__list{
+      display:flex;
+      align-items: center;
+      margin-bottom: 0;
+      list-style: none;
+      column-gap: 2rem;
+      a{
+        color:var(--white);
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+          color:var(--orange);
+        }
+      }
+     
+    }
+    .custome__search{
+      display:flex;
+      align-items: center;
+      padding:10px 25px;
+      margin-top: 20px;
+      margin-left: 25px;
+      height:35px;
+      border-radius:50px;
+      background-color:#091035;
+      input{
+        border:none;
+        outline: none;
+        background-color: transparent;
+        color:var(--white);
+
+
+      }
+      span i{
+        cursor: pointer;
+      }
+    }
+   
+  }
+}
+.bobile__menu{
+  display:none;
+  span i{
+   font-size:1.5rem;
+ }
+ 
+
+}
+
+.cart-icon {
+  position: relative;
+  z-index: 999;
+  width:40px;
+  height:30px;
+  background-color:var(--orange);
+  border-radius:5px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 3px 1px rgba(24, 24, 24, 0.5);
+  .bage{
+    position:absolute;
+    top:3;
+    right:0;
+    z-index: 1000;
+    color:var(--black);
+    font-size:1rem ;
+    font-weight:bold;
+  }
+ }
+
+
+//HeroSlider
+@import "./sass/heroslider";
+
+//productCart
+@import "./sass/product-cart.scss";
+
+// ChooseUs
+@import "./sass/choose-us";
+
+//MenuPack
+@import "./sass/menu-pack";
+
+//PupularMenu
+@import "./sass/pupular-menu";
+
+
+//TestiMoni
+@import "./sass//test-moni";
+
+//Dawnload
+@import "./sass/dawnload.scss";
+
+//Footer
+.footer{
+  padding-bottom: 0;
+  .footer__link_title{
+    color:var(--white);
+  }
+  .link__item{
+    padding-left: 0;
+    background: transparent;
+    color:rgb(190, 175, 175);
+    a{
+      color:#696048
+    }
+  }
+  .footer__buttom{
+    background:#0a071a;
+    padding:20px 0px;
+    text-align:center;
+    margin-top:50px;
+    p{
+     font-size:.9rem;
+     margin-bottom:0;
+
+    }
+  }
+}
+
+
+// *********RESPONSIVE***************
+
+@media only screen and (max-width:991px){
+//hrader
+  .header{
+    line-height:40px;
+    padding:20px 0px;
+
+    .logo h2{
+      font-size:1.5rem;
+    }
+    
+  }
+  .nav__menu {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: 99;
+    background:#0a071a7e;
+    display:none;
+ 
+    .naV__list__wrapper{
+      position:absolute;
+      top:0;
+      right: 0;
+      width: 50%;
+      height:100%;
+      z-index: 100;
+      background:#141124;
+      padding:0px 30px;
+      flex-direction: column;
+      box-shadow: 5px 5px 25px -5px var(--orange);
+      justify-content: center !important;
+      
+      .nav__list{
+        flex-direction: column;
+        padding:0;
+        .nav__item a{
+          font-size: .9rem;
+        }
+        
+      }
+    }
+
+  }
+.custome__search{
+  border:1px solid var(--white);
+  padding:5px 15px;
+  font-size: .9rem;
+  height:30px;
+  margin-top:15px;
+  
+}
+
+.bobile__menu{
+  display:block;
+ span i{
+  font-size:1.5rem;
+}
+}
+.activ__menu{
+  display:block;
+}
+
+
+//footer
+.link__item{
+  font-size: .8rem;
+  a{
+    font-size: .8rem;
+  }
+  p{
+    font-size: .8rem;
+  }
+}
+.footer__buttom{
+  p{
+    font-size: .8rem;
+  }
+}
+}

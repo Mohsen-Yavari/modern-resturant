@@ -1,0 +1,80 @@
+.single__product{
+  
+  
+    border-radius: 10px;
+    margin:10px 0;
+    box-shadow: 5px 5px 10px -5px #3c3c41 ;
+    border: none !important;
+    outline: none !important;
+    animation: animeh 1s ease-in;
+    cursor: pointer;
+  
+    &:hover{
+      animation: shake 10s;
+      animation-iteration-count: infinite;
+      box-shadow: 5px 5px 10px -5px var(--orange);
+      border: none !important;
+      outline: none !important;
+     
+     
+    }
+    .product__content{
+      padding:0px 20px;
+      padding-bottom:15px;
+      h6{
+        color:var(--white);
+        text-align:center;
+      }
+      .rating span i{
+        color:rgb(231, 247, 11);
+       
+      }
+    }
+    
+   .price{
+     color:var(--white);
+     font-weight: bold;
+     span{
+       font-size:1.3rem;
+       &:hover{
+        color: #fb8500;
+      }
+     }
+    
+   }
+   .shopping__icon{
+     width: 30px;
+     height: 30px;
+     border-radius:5px;
+     background-color:var(--orange);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  
+   }
+   .rating{
+     margin-bottom:10px;
+   }
+  }
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  
+  @keyframes animeh {
+    from{
+      transform: scale(0);
+    }
+    to{
+      transform: scale(1);
+    }
+  }

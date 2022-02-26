@@ -1,0 +1,39 @@
+.single__testimoni{
+    h6{
+      color:var(--orange);
+      font-size:1.1rem;font-weight:bold;
+    }
+    p{
+      font-size: .8rem;
+      color: var(--white);
+    }
+  }
+ 
+  @media only screen and (max-width: 991px){
+    .slider__content{
+      h2{
+        font-size:1.5rem;
+        margin-bottom: 15px;
+      }
+    }
+    .single__testimoni{
+      font-size: .7rem;
+
+    }
+    
+  }
+
+
+  @media only screen and (max-width: 768px){
+    .slider__warper{
+      flex-direction: column;
+      width: 100% !important;
+      
+    }
+    .slider__content{
+      width: 100% !important;
+    }
+    .slider__img{
+      width: 100%!important;
+    }
+  }
